@@ -43,8 +43,8 @@ export default function About() {
               {brandInfo.description}
             </p>
             <p className="about__description about__description--secondary">
-              With four locations across Gadag, Koppal, Gangavathi, and Sindhanur, 
-              BIG DADDY is where contemporary fashion meets bold confidence.
+              With five locations across Gadag, Koppal, Gangavathi, Sindhanur, and 
+              the upcoming H.B. Halli, BIG DADDY is where contemporary fashion meets bold confidence.
             </p>
 
             <div className="about__social">

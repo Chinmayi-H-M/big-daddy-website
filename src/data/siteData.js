@@ -56,6 +56,20 @@ export const divisions = [
     hours: null,
     mapUrl: null,
     collections: [],
+    comingSoon: false,
+  },
+  {
+    id: 'hb-halli',
+    name: 'H.B. Halli',
+    tagline: 'A New Chapter Awaits',
+    image: null,
+    address: null,
+    phone: null,
+    email: null,
+    hours: null,
+    mapUrl: null,
+    collections: [],
+    comingSoon: true,
   },
 ];
 

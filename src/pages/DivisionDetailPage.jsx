@@ -65,7 +65,30 @@ export default function DivisionDetailPage() {
                 <h2 className="division-detail__store-name">BIG DADDY — {division.name}</h2>
               </div>
 
-              {hasDetails ? (
+              {division.comingSoon ? (
+                <div className="division-detail__pending">
+                  <div style={{
+                    display: 'inline-block',
+                    fontFamily: 'var(--font-body)',
+                    fontSize: '0.625rem',
+                    fontWeight: 600,
+                    letterSpacing: '0.2em',
+                    textTransform: 'uppercase',
+                    color: 'var(--color-black)',
+                    background: 'linear-gradient(135deg, var(--color-gold), var(--color-gold-light))',
+                    padding: '0.25rem 0.75rem',
+                    marginBottom: '1rem',
+                  }}>
+                    Coming Soon
+                  </div>
+                  <p className="division-detail__pending-text">
+                    BIG DADDY — {division.name} is opening soon.
+                  </p>
+                  <p className="division-detail__pending-sub">
+                    Stay tuned for the grand opening. Store details will be announced shortly.
+                  </p>
+                </div>
+              ) : hasDetails ? (
                 <div className="division-detail__info">
                   {division.address && (
                     <div className="division-detail__row">

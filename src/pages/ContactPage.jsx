@@ -32,7 +32,7 @@ export default function ContactPage() {
           <h1 className="page-hero__title heading-display">CONTACT US</h1>
           <div className="gold-divider" />
           <p className="page-hero__subtitle">
-            Visit one of our four locations or send us a message.
+            Visit one of our five locations or send us a message.
           </p>
         </div>
       </motion.div>

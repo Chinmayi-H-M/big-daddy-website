@@ -21,7 +21,7 @@ export default function DivisionsPage() {
           <h1 className="page-hero__title heading-display">OUR DIVISIONS</h1>
           <div className="gold-divider" />
           <p className="page-hero__subtitle">
-            Four locations. One premium experience.
+            Five locations. One premium experience.
           </p>
         </div>
       </motion.div>

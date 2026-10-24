@@ -97,7 +97,7 @@ export default function Hero() {
           </div>
           <div className="hero__stats">
             <div className="hero__stat">
-              <span className="hero__stat-number">4</span>
+              <span className="hero__stat-number">5</span>
               <span className="hero__stat-label">Locations</span>
             </div>
             <div className="hero__stat-divider" />
