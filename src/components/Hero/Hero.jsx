@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight, MapPin } from 'lucide-react';
+import HeroBackground from './HeroBackground';
 import './Hero.css';
 
 const transition = { duration: 0.9, ease: [0.16, 1, 0.3, 1] };
@@ -8,8 +9,9 @@ const transition = { duration: 0.9, ease: [0.16, 1, 0.3, 1] };
 export default function Hero() {
   return (
     <section className="hero" id="hero" aria-label="Hero banner">
-      {/* Background */}
+      {/* Background — animated clothing canvas + overlay */}
       <div className="hero__bg">
+        <HeroBackground />
         <motion.div
           className="hero__bg-gradient"
           initial={{ opacity: 0, scale: 1.08 }}
