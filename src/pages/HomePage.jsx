@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <main>
       <Hero />
-      <Collection limit={4} />
+      <Collection limit={5} />
       <Divisions />
       <About />
       <InstaGallery />

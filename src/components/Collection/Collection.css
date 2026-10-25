@@ -70,6 +70,43 @@
   transform: translateY(-4px);
 }
 
+/* ─── Deal Tag (Price / Offer — ABOVE the image) ──────────────────────────── */
+
+.product-card__deal-tag {
+  background: linear-gradient(135deg, #c9952e 0%, #e8b84a 50%, #c9952e 100%);
+  color: #0a0a0a;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card__deal-tag::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: dealTagShimmer 3s ease-in-out infinite;
+}
+
+@keyframes dealTagShimmer {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+
+.product-card__deal-tag span {
+  position: relative;
+  z-index: 1;
+}
+
 /* ─── Product Image ────────────────────────────────────────────────────────── */
 
 .product-card__image-wrap {
@@ -209,25 +246,6 @@
 
 .product-card__name-link:hover .product-card__name {
   color: var(--color-gold);
-}
-
-.product-card__price-row {
-  display: flex;
-  align-items: baseline;
-  gap: var(--space-sm);
-}
-
-.product-card__price {
-  font-size: var(--text-base);
-  font-weight: 600;
-  color: var(--color-gold);
-}
-
-.product-card__price--pending {
-  font-size: var(--text-sm);
-  font-weight: 400;
-  font-style: italic;
-  color: var(--text-muted);
 }
 
 /* ─── Responsive ───────────────────────────────────────────────────────────── */

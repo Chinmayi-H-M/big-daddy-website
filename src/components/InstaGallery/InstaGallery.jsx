@@ -6,12 +6,12 @@ import { brandInfo } from '../../data/siteData';
 import './InstaGallery.css';
 
 const gallerySlots = [
-  { id: 1, color: '#722F37', label: 'Burgundy Collection' },
-  { id: 2, color: '#36454F', label: 'Charcoal Essentials' },
-  { id: 3, color: '#DE6FA1', label: 'Blush Pink Style' },
-  { id: 4, color: '#1a1408', label: 'BIG DADDY Classic' },
-  { id: 5, color: '#2C1810', label: 'Premium Wear' },
-  { id: 6, color: '#1a1a2e', label: 'Signature Look' },
+  { id: 1, image: '/images/tshirts.jpg', label: 'Round Shoulder T-Shirts' },
+  { id: 2, image: '/images/shorts.jpg', label: 'Premium Shorts' },
+  { id: 3, image: '/images/trackpants.jpg', label: 'Track Pants' },
+  { id: 4, image: '/images/formal-shirts.jpg', label: 'Formal Shirts' },
+  { id: 5, image: '/images/jacket.jpg', label: 'Moto Jacket' },
+  { id: 6, image: '/images/logo.jpg', label: 'BIG DADDY Collection' },
 ];
 
 export default function InstaGallery() {
@@ -54,10 +54,12 @@ export default function InstaGallery() {
             >
               <div
                 className="insta-gallery__image"
-                style={{ backgroundColor: slot.color }}
-              >
-                <img src="/images/logo.jpg" alt="" className="insta-gallery__logo" />
-              </div>
+                style={{
+                  backgroundImage: `url(${slot.image})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
+              />
               <div className="insta-gallery__overlay">
                 <InstagramIcon size={24} />
                 <span className="insta-gallery__label">{slot.label}</span>

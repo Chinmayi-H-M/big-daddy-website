@@ -37,6 +37,13 @@ function ProductCard({ product, index }) {
         delay: index * 0.08,
       }}
     >
+      {/* Deal Tag / Price shown ABOVE the image */}
+      {product.dealTag && (
+        <div className="product-card__deal-tag">
+          <span>{product.dealTag}</span>
+        </div>
+      )}
+
       <div className="product-card__image-wrap">
         <div
           className="product-card__image"
@@ -93,14 +100,6 @@ function ProductCard({ product, index }) {
         <Link to={`/product/${product.id}`} className="product-card__name-link">
           <h3 className="product-card__name">{product.name}</h3>
         </Link>
-
-        <div className="product-card__price-row">
-          {product.price != null ? (
-            <span className="product-card__price">₹{product.price.toLocaleString('en-IN')}</span>
-          ) : (
-            <span className="product-card__price product-card__price--pending">Price coming soon</span>
-          )}
-        </div>
       </div>
     </motion.article>
   );
